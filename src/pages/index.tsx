@@ -22,8 +22,10 @@ const Home: React.FC<HomePageProps> = ({ posts }) => {
       <div className="flex justify-center px-4 md:px-8">
         <main className="w-full max-w-4xl">
           <img src="/pixeltrue-web-development.svg" alt="logo" />
-          <h1 className="mt-4 text-4xl text-center">Usucode</h1>
-          <div className="mt-4">
+          <h1 className="mt-4 text-4xl font-bold text-center text-slate-100">
+            Usucode
+          </h1>
+          <div className="mt-4 text-slate-100">
             <p className="leading-7">
               デザインが好きなフロントエンドメインでやっているエンジニアのAkiyamaです。
             </p>
@@ -39,11 +41,11 @@ const Home: React.FC<HomePageProps> = ({ posts }) => {
             </p>
           </div>
 
-          <div className="mt-4">
+          <div className="mt-4 text-slate-100">
             <p className="leading-7">以下のブログは、Notionで書いてます。</p>
           </div>
 
-          <h2 className="">All Posts</h2>
+          <h2 className=" text-slate-100">All Posts</h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {posts.map((post) => {
               const date = new Date(post.last_edited_time).toLocaleString(
