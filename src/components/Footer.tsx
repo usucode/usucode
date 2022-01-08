@@ -28,7 +28,7 @@ const Footer = () => {
         <li>
           <a
             className="w-10 h-10 inline-flex justify-center items-center bg-gray-600 bg-opacity-50 text-[0px] rounded-full"
-            href="https://note.com/usu"
+            href="https://note.com/usucode"
             target="_blank"
             rel="noopener noreferrer"
           >
