@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import { getDatabase } from '../lib/notion';
-import { Text } from './[id]';
 import Tags from '~/components/Tags';
 import Layout from '~/components/Layout';
+import Text from '~/components/Text';
 
 export const databaseId = process.env.NOTION_DATABASE_ID;
 
