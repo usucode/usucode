@@ -4,7 +4,7 @@ import Footer from '~/components/Footer';
 
 const Layout: React.FC = (props) => {
   return (
-    <div className="bg-slate-700">
+    <div className="bg-[#20252B]">
       <Header />
       {props.children}
       <Footer />
