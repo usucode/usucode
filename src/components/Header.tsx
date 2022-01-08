@@ -2,9 +2,11 @@ import Link from 'next/link';
 
 const Header = () => {
   return (
-    <header className="flex px-4 md:px-8">
+    <header className="flex justify-center py-8 px-4 md:px-8">
       <Link href="/">
-        <p className="text-4xl font-display text-slate-100">U</p>
+        <a>
+          <img src="/logos/main.svg" alt="logo" />
+        </a>
       </Link>
     </header>
   );

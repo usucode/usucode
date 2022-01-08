@@ -21,32 +21,15 @@ const Home: React.FC<HomePageProps> = ({ posts }) => {
 
       <div className="flex justify-center px-4 md:px-8">
         <main className="w-full max-w-4xl">
-          <img src="/pixeltrue-web-development.svg" alt="logo" />
-          <h1 className="mt-4 text-4xl font-bold text-center text-slate-100">
-            Usucode
-          </h1>
-          <div className="mt-4 text-slate-100">
-            <p className="leading-7">
-              デザインが好きなフロントエンドメインでやっているエンジニアのAkiyamaです。
-            </p>
-            <p className="leading-7">
-              Notion
-              APIが無料枠でもかなり活用できると分かったのでNotionをCMSとして使ってみました。
-            </p>
-            <p className="leading-7">
-              FirebaseのHostingを使ってNext.jsでブログを作ってます。
-            </p>
-            <p className="leading-7">
-              CSSに関しては、全てTailwindcssでやっていく予定です。
+          <img src="/pixeltrue-web-development.svg" alt="main visual" />
+          <div className="mt-4 text-slate-100 leading-7">
+            <p>UI/UXが大好きなフロントエンドの秋山です。</p>
+            <p>
+              最近業務では、Railsを書くことが増えてきているのでフロントエンドじゃなくなりかけています笑
             </p>
           </div>
 
-          <div className="mt-4 text-slate-100">
-            <p className="leading-7">以下のブログは、Notionで書いてます。</p>
-          </div>
-
-          <h2 className=" text-slate-100">All Posts</h2>
-          <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <ul className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {posts.map((post) => {
               const date = new Date(post.last_edited_time).toLocaleString(
                 'en-US',
@@ -73,13 +56,13 @@ const Home: React.FC<HomePageProps> = ({ posts }) => {
                   <div className="p-4">
                     <h3 className="text-2xl font-bold tracking-wider">
                       <Link href={`/${post.id}`}>
-                        <a className="cursor-pointer">
+                        <a className="cursor-pointer text-white">
                           <Text text={post.properties.Name.title} />
                         </a>
                       </Link>
                     </h3>
 
-                    <p className="">{date}</p>
+                    <p className="text-slate-400 text-sm">{date}</p>
                     <Tags data={post.properties.Tags.multi_select} />
                   </div>
                 </li>
