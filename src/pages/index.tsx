@@ -44,7 +44,7 @@ const Home: React.FC<HomePageProps> = ({ posts }) => {
                   key={post.id}
                   className="sm:first:col-span-2 lg:first:col-span-3 rounded-2xl overflow-hidden border border-gray-100"
                 >
-                  <Link href={`/${post.id}`}>
+                  <Link href={`/posts/${post.id}`}>
                     <a className="cursor-pointer">
                       <img
                         className="w-full h-40 object-cover"
@@ -55,7 +55,7 @@ const Home: React.FC<HomePageProps> = ({ posts }) => {
                   </Link>
                   <div className="p-4">
                     <h3 className="text-2xl font-bold tracking-wider">
-                      <Link href={`/${post.id}`}>
+                      <Link href={`/posts/${post.id}`}>
                         <a className="cursor-pointer text-white">
                           <Text text={post.properties.Name.title} />
                         </a>
