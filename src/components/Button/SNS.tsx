@@ -64,7 +64,7 @@ const ButtonSNS: React.FC<ButtonSNSProps> = (props) => {
     <ButtonCore
       href={props.href}
       isExternalLink={props.isExternalLink}
-      className="w-10 h-10 inline-flex justify-center items-center bg-gray-600 bg-opacity-50 text-[0px] rounded-full"
+      className="w-10 h-10 inline-flex justify-center items-center bg-gray-700 border border-gray-600 text-[0px] rounded-full"
     >
       <LinkIcon href={props.href} />
     </ButtonCore>
