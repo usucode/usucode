@@ -6,7 +6,7 @@ import Layout from '~/components/Layout';
 import Text from '~/components/Text';
 import CardProfile from '~/components/Card/Profile';
 
-export const databaseId = process.env.NOTION_DATABASE_ID;
+export const databaseId = process.env.POSTS_DATABASE_ID;
 
 interface HomePageProps {
   posts: any[];
@@ -21,15 +21,8 @@ const Home: React.FC<HomePageProps> = ({ posts }) => {
       </Head>
 
       <div className="flex justify-center px-4 md:px-8">
-        <main className="w-full max-w-2xl">
+        <div className="w-full max-w-2xl">
           <CardProfile />
-          <img src="/pixeltrue-web-development.svg" alt="main visual" />
-          <div className="mt-4 text-slate-100 leading-7">
-            <p>UI/UXが大好きなフロントエンドの秋山です。</p>
-            <p>
-              最近業務では、Railsを書くことが増えてきているのでフロントエンドじゃなくなりかけています笑
-            </p>
-          </div>
           <ul className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {posts.map((post) => {
               const date = new Date(post.last_edited_time).toLocaleString(
@@ -64,13 +57,13 @@ const Home: React.FC<HomePageProps> = ({ posts }) => {
                     </h3>
 
                     <p className="text-slate-400 text-sm">{date}</p>
-                    <Tags data={post.properties.Tags.multi_select} />
+                    <Tags data={post.properties.tags.multi_select} />
                   </div>
                 </li>
               );
             })}
           </ul>
-        </main>
+        </div>
       </div>
     </Layout>
   );

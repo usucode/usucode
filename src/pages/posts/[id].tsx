@@ -153,7 +153,7 @@ export const getStaticProps = async (context) => {
 };
 
 export async function getStaticPaths() {
-  const database = await getDatabase(process.env.NOTION_DATABASE_ID);
+  const database = await getDatabase(process.env.POSTS_DATABASE_ID);
   return {
     paths: database?.map(({ id }) => `/posts/${id}`) ?? [],
     fallback: true,
