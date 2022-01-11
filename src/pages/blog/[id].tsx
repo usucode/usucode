@@ -96,7 +96,7 @@ export default function Post({ page, blocks }) {
           <img src={page.cover.external.url} alt="cover image" />
         </h1>
         <ul>
-          {page.properties.Tags.multi_select.map((item, i) => (
+          {page.properties.tags?.multi_select.map((item, i) => (
             <li key={i}>{item.name}</li>
           ))}
         </ul>
