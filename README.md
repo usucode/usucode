@@ -28,7 +28,7 @@ HTML(Pug), CSS(SCSS), JS(TypeScript), gulp, webpack, parcel, Nuxt.js, PHP, WordP
 - 2017/04/01 ~ 2018/12/31
 
 ```
-日立研究所に派遣でプログラマーとしてLinuxのIoTのセキュリティ管理システムの開発を行なっていました。  
+H研究所に派遣でプログラマーとしてLinuxのIoTのセキュリティ管理システムの開発を行なっていました。  
 使用したデバイス, OS  
 Linux(Ubuntu), RasPi, IoTGateWay, PLC  
 使用した技術  
