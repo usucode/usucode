@@ -37,5 +37,4 @@ C, C++, Java, PHP, HTML, CSS, JS, Node.js, Node-RED, Python, Bash, PostgreSQL, V
 
 ## SNSに関して
 - [Twitter](https://twitter.com/yusuke_akiyama_)
-- [note](https://note.com/yusuke_akiyama)
 - [Wantedly](https://www.wantedly.com/id/yusuke_akiyama_)
