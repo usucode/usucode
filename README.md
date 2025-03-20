@@ -12,7 +12,7 @@
 
 ```
 使用した技術
-Rails, Vue.js  
+Rails, Vue.js, Next.js, TypeScript
 ```
 
 
